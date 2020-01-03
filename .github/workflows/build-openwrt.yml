@@ -91,8 +91,8 @@ jobs:
         cd openwrt
         make -j1 V=s
 
-    - name: Upload bin directory
-      uses: actions/upload-artifact@master
+ #   - name: Upload bin directory
+ #     uses: actions/upload-artifact@master
       if: always()
       with:
         name: OpenWrt_bin
